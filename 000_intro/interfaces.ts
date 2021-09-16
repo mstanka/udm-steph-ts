@@ -1,4 +1,7 @@
 // any variable type in the interface, also a function
+// cannot be used for primitive types or unions e.g. interface Point = number | string;
+// this must be type Point = number | string;
+
 interface Vehicle {
   name: string;
   year: Date;
@@ -40,7 +43,7 @@ const printVehicle = (vehicle: Vehicle): void => {
   console.log(vehicle.summary());
 };
 
-printVehicle(oldCivic);
+// printVehicle(oldCivic);
 
 // generic function to use for different objects
 const printSummary = (item: Reportable): void => {
@@ -70,3 +73,9 @@ let pageName: string | number = '1';
 // type alliases
 type PopularTag = string;
 const popularTags: PopularTag[] = ['dragon', 'coffee'];
+
+/////// interface with functions
+interface IMathFunc {
+  (x: number, y: number): number;
+}
+const sub: IMathFunc = (x: number, y: number): number => x - y;
