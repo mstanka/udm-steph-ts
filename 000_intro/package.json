@@ -1,0 +1,23 @@
+{
+  "name": "udm-steph-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mstanka/udm-steph-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mstanka/udm-steph-ts/issues"
+  },
+  "homepage": "https://github.com/mstanka/udm-steph-ts#readme",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
